@@ -1,23 +1,46 @@
-# Write your code here :-)
 # German practice
 
 
 def germanGreeting():
     name = input("Hello, what is your name? ")
-    timeOfDay = input(f"Willkommen, {name}. What time is it: morning, afternoon, evening or night? ")
+    timeofDay = input(f"Willkommen, {name}. What time is it: morning, afternoon, evening or night? ")
+    timeOfDay = timeofDay.lower()
+
     if timeOfDay == 'morning':
-        print(f'Guten Morgen, {name}')
+        return f'Guten Morgen, {name}'
 
     elif timeOfDay == 'afternoon':
-        print(f'Guten Tag, {name}')
+        return f'Guten Tag, {name}'
 
     elif timeOfDay == 'evening':
-        print(f'Guten Abend, {name}')
+        return f'Guten Abend, {name}'
 
     elif timeOfDay == 'night':
-        print(f'Gute Nacht, {name}')
+        return f'Gute Nacht, {name}'
 
     else:
-        print(f'Sprechen sie Deutsch, {name}?')
+        return f'Sprechen sie Deutsch, {name}?'
 
-germanGreeting()
+greeting = germanGreeting()
+print(greeting)
+
+
+def germanGender():
+    gender = input('Hallo and willkommen! Today we are learning Deutsch words. Would you like to learn words for female or male? ')
+    age = input('Super! Would you like to learn the words for a child or an adult? ')
+
+    if gender.lower() == 'female':
+        if age.lower() == 'child':
+            return 'Madchen'
+        else:
+            return 'Frau'
+    else:
+        if age.lower() == 'child':
+            return 'Junge'
+        else:
+            return 'Mann'
+
+
+genderAge = germanGender()
+print(genderAge)
+
