@@ -49,7 +49,7 @@ def germanNumbers():
     number_to_translate = input('Guten Tag! Today we are going to learn our numbers (0-10) in German! What number would you like to learn first? Press enter when done. ')
     num = int(number_to_translate)
 
-    while num != "":
+    while number_to_translate != "":
 
         if num == 0:
             return 'null'
