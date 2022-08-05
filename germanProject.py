@@ -82,3 +82,7 @@ def germanNumbers():
 
 numLearn = germanNumbers()
 print(numLearn)
+
+
+def germanPossessive():
+
