@@ -85,4 +85,10 @@ print(numLearn)
 
 
 def germanPossessive():
+    whoDis = input("Is the item yours or theirs?")
+
+    if whoDis == "mine"
+        return "Mein or Meine"
+    else:
+        return "Dein or Deine"
 
