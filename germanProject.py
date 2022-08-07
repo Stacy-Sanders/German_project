@@ -85,10 +85,54 @@ print(numLearn)
 
 
 def germanPossessive():
-    whoDis = input("Is the item yours or theirs?")
+    whoDis = input("Is the item yours(type mine) or theirs? ")
 
-    if whoDis == "mine"
+    if whoDis == "mine":
         return "Mein or Meine"
     else:
         return "Dein or Deine"
+
+
+owner_ship = germanPossessive()
+print(owner_ship)
+
+
+def germanCourtesies():
+    print("Willkommen! We are going to learn a few new words today.")
+    num = int(input('''Please enter the corresponding number for the word you would like to learn:
+                        1. Please
+                        2. Thank you
+                        3. Excuse me
+                        4. I'm sorry
+                        5. See you soon
+                        6. See you later
+                        7. Bye
+                        8. Goodbye
+                        9. Welcome
+                        '''))
+
+    if num == 1:
+        return "Bitte"
+    elif num == 2:
+        return "Danke"
+    elif num == 3:
+        return "Entschuldigung"
+    elif num == 4:
+        return "Es tut mir leid"
+    elif num == 5:
+        return "Bis bald"
+    elif num == 6:
+        return "Bis spater"
+    elif num == 7:
+        return "Tschuss"
+    elif num == 8:
+        return "Auf Weidersehen"
+    elif num == 9:
+        return "Willkommen"
+    else:
+        return "Please enter a number 1 - 8."
+
+
+learnWord = germanCourtesies()
+print(learnWord)
 
