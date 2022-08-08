@@ -136,3 +136,23 @@ def germanCourtesies():
 learnWord = germanCourtesies()
 print(learnWord)
 
+
+# look up possibility of adding umlauts
+
+def germanSprachen():
+    response = input("Sprechen sie Deutsch? ")
+
+    if response == "ja":
+        return "Prost! Ich spreche ein bisschen Deutsch!"
+    elif response = "yes":
+        return "You clearly didn't understand the assignment."
+    else:
+        return "German is fun and a great language to learn."
+
+
+ja_oder_nein = germanSprachen()
+print(ja_oder_nein)
+
+
+
+
