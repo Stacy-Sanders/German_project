@@ -99,17 +99,17 @@ print(owner_ship)
 
 def germanCourtesies():
     print("Willkommen! We are going to learn a few new words today.")
-    num = int(input('''Please enter the corresponding number for the word you would like to learn:
-                        1. Please
-                        2. Thank you
-                        3. Excuse me
-                        4. I'm sorry
-                        5. See you soon
-                        6. See you later
-                        7. Bye
-                        8. Goodbye
-                        9. Welcome
-                        '''))
+    num = int(input('''Please enter the corresponding number for the word or phrase you would like to learn:
+1. Please
+2. Thank you
+3. Excuse me
+4. I'm sorry
+5. See you soon
+6. See you later
+7. Bye
+8. Goodbye
+9. Welcome
+'''))
 
     if num == 1:
         return "Bitte"
@@ -143,8 +143,8 @@ def germanSprachen():
     response = input("Sprechen sie Deutsch? ")
 
     if response == "ja":
-        return "Prost! Ich spreche ein bisschen Deutsch!"
-    elif response = "yes":
+        return "Prost! Ich spreche ein bisschen Deutsch."
+    elif response == "yes":
         return "You clearly didn't understand the assignment."
     else:
         return "German is fun and a great language to learn."
@@ -154,5 +154,25 @@ ja_oder_nein = germanSprachen()
 print(ja_oder_nein)
 
 
+def muttersprache():
+    language_user = input("In German, your native language is known as Muttersprache. What is your mother tongue? I will tell you what it is in German. \n")
 
+    if language_user == "English":
+        return "Englisch"
+    elif language_user == "Spanish":
+        return "Spanisch"
+    elif language_user == "German":
+        return "Deutsch"
+    elif language_user == "French":
+        return "Franzosisch"
+    elif language_user == "Polish":
+        return "Polnisch"
+    elif language_user == "Russian":
+        return "Russisch"
+    elif language_user == "Turkish":
+        return "Turkisch"
+    else:
+        return "I'll have to get back to you on that! Tschuss!"
 
+speak_to_me = muttersprache()
+print(speak_to_me)
