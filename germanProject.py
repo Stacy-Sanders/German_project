@@ -176,3 +176,22 @@ def muttersprache():
 
 speak_to_me = muttersprache()
 print(speak_to_me)
+
+
+def germanJobs(job):
+
+    if job == "lawyer":
+        return "Anwalt/Antwalin"
+    elif job == "doctor":
+        return "Artz/Artzin"
+    elif job == "professor":
+        return "Professor/Professorin"
+    elif job == "teacher":
+        return "Lehrer/Lehrerin"
+    else:
+        return "I'm still learning!"
+
+your_job = germanJobs("lawyer")
+
+print(your_job)
+
