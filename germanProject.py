@@ -195,3 +195,23 @@ your_job = germanJobs("lawyer")
 
 print(your_job)
 
+
+def countryGerman():
+    country = input("What country are you from?")
+
+    if country == "America": # yes, I need to work on this, but it's what I've learned so far
+        return "Amerika"
+    elif country == "Germany":
+        return "Deutschland"
+    elif country == "Austria":
+        return "Osterreich"
+    elif country == "France":
+        return "Frankreich"
+    elif country == "Russia":
+        return "Russland"
+    else:
+        return "More to come"
+
+homeCountry = countryGerman()
+print(homeCountry)
+
